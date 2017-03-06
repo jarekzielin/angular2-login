@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+
+    fieldset {
+        border: 1px solid #f1f1f1;
+    }
+
+    label {
+        display: inline-block;
+        width: 40%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .field + .field,
+    .submit {
+        margin-top: 10px;
+    }
+
+    .submit {
+        text-align: center;
+        input {
+            width: auto;
+        }
+    }
+}

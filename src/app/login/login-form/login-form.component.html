@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()">
+  <fieldset>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email"
+        [(ngModel)]="email"
+        (focus)="onFocus()">
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password"
+        [(ngModel)]="password"
+        (focus)="onFocus()">
+    </div>
+    <div class="field">
+      <label for="remember">Rember me</label>
+      <input type="checkbox" name="remember" id="remember"
+        [(ngModel)]="remember">
+    </div>
+    <div class="submit">
+      <input type="submit" value="login">
+    </div>
+  </fieldset> 
+</form>

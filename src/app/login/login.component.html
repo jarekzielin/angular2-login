@@ -1,0 +1,11 @@
+<div *ngIf="isAuthenticated">
+  <h1>Logged in</h1>
+</div>
+<div *ngIf="!isAuthenticated">
+  <h1>Login</h1>
+  <app-login-form
+    (submitInvoked)="login($event)"
+    (focusInvoked)="resetMessage()"></app-login-form>
+</div>
+<app-login-message
+  [message]="message"></app-login-message>
