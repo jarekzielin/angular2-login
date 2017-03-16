@@ -1,5 +1,8 @@
 # Login
 
+Sample app built in Agular 2.
+It shows how to spy on http service to use mock data as a response.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
 
 ## Development server
